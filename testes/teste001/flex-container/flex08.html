@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align content</title>
+    <style>
+        .container {
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item {
+            background-color: orange;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>O align content alinha o conteúdo do container de acordo com o eixo vertical; necessário o container quebrar linhas (flex-wrap) e altura do container seja maior que a soma das linhas dos itens. Tipos de alinhamentos</p>
+        <dl>
+            <dt>center</dt>
+            <dd>alinhamento central dos itens</dd>
+            <dt>stretch</dt>
+            <dd>é o padrão</dd>
+            <dt>flex-start</dt>
+            <dd>Alinhamento dos itens no início</dd>
+            <dt>flex-end</dt>
+            <dd>Alinhamento dos itens no final</dd>
+            <dt>space-between</dt>
+            <dd>cria um espaçamento igual entre os elementos</dd>
+            <dt>space-around</dt>
+            <dd>espaçamento dos meios são duas vezes maiores que o inicial e final</dd>
+        </dl>
+    </section>
+
+    <h1>stretch</h1>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aut!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum Lorem ipsum dolor sit.</div>
+    </div>
+    <h1>center</h1>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aut!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum Lorem ipsum dolor sit.</div>
+    </div>
+    <h1>flex-start</h1>
+    <div class="container flex-start">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aut!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum Lorem ipsum dolor sit.</div>
+    </div>
+    <h1>flex-end</h1>
+    <div class="container flex-end">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aut!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum Lorem ipsum dolor sit.</div>
+    </div>
+    <h1>space-around</h1>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aut!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum Lorem ipsum dolor sit.</div>
+    </div>
+    <h1>space-between</h1>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aut!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum Lorem ipsum dolor sit.</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+@mixin paraTelasPequenas($media) {
+    @media (max-width: $media/16+em) { @content; }
+}
+* {
+    font-family: 'Open Sans', sans-serif;
+    width: auto;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #BFBFBF, #4C5958);
+}
+
+main {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    max-width: 800px;
+    min-width: 320px;
+    margin: 100px auto 100px auto;
+}
+
+.primeiro {
+    max-width: 800px;
+    min-width: 320px;
+    background-color: white;
+    padding: 10px 10px 0px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.segundo {
+    width: 100%;
+    background-color: #03A696;
+    max-width: 395px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    align-content: center;
+    border-bottom-left-radius: 10px;
+    color: lightgrey;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.segundo > #especial {
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+.segundo a {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
+    transition-duration: 1s;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    padding-top: 20px;
+    background-color: #253659;
+    align-self: center;
+    border-radius: 5px;
+    width: 340px;
+    height: 50px;
+}
+
+.segundo a:hover {
+    color: #03A696;
+}
+.terceiro {
+    width: 100%;
+    background-color: #04BF9D;
+    max-width: 395px;
+    padding-left: 10px;
+    flex-direction: column;
+    align-content: center;
+    border-bottom-right-radius: 10px;
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+.terceiro h2 {
+    text-align: center;
+    color: whitesmoke;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 840px) {
+    .segundo {
+        max-width: 800px;
+        border-bottom-left-radius: 0px;
+    }
+    .terceiro {
+        max-width: 800px;
+        border-bottom-left-radius: 10px;
+    }
+}
