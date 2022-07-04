@@ -5,6 +5,7 @@
 @mixin paraTelasPequenas($media) {
     @media (max-width: $media/16+em) { @content; }
 }
+
 * {
     font-family: 'Open Sans', sans-serif;
     width: auto;
