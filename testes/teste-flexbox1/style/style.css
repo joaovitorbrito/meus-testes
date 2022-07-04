@@ -78,7 +78,6 @@ body {
     }
     .container {
         display: flex;
-        width:;
         align-items: center;
         justify-content: center;
     }
